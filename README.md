@@ -14,7 +14,9 @@ Praktikum ini bertujuan untuk memahami konsep **Document Object Model (DOM)** se
   2. Saat skrip `script.js` dieksekusi (menggunakan atribut `defer`), JavaScript mencari elemen dengan `id="judul"` dan `id="pesan"`.
   3. Nilai properti `textContent` dari kedua elemen diubah secara dinamis dari nilai awal menjadi teks baru.
 * **Screenshot**:
-  *(Sisipkan screenshot tampilan judul dan pesan yang berubah di browser di sini)*
+<img width="420" height="267" alt="Screenshot from 2026-10-26 10-48-04" src="https://github.com/user-attachments/assets/575f7649-3145-49cd-9804-55fea0576578" />
+<img width="425" height="277" alt="Screenshot from 2026-10-26 10-46-43" src="https://github.com/user-attachments/assets/69f55ae0-94ab-4510-92fa-8991e53bfee9" />
+<img width="420" height="267" alt="Screenshot from 2026-10-26 10-47-37" src="https://github.com/user-attachments/assets/d9bda241-898c-42b2-8645-6eb0c7d94024" />
 
 ---
 
@@ -25,41 +27,45 @@ Praktikum ini bertujuan untuk memahami konsep **Document Object Model (DOM)** se
   2. Ketika pengguna mengklik tombol, fungsi *callback* secara otomatis dipanggil.
   3. Fungsi mengambil waktu sistem terkini dengan `new Date().toLocaleTimeString()` dan mencetaknya ke elemen paragraf.
 * **Screenshot**:
-  *(Sisipkan screenshot tampilan pesan waktu saat tombol diklik di sini)*
+<img width="420" height="267" alt="Screenshot from 2026-10-26 10-52-28" src="https://github.com/user-attachments/assets/8f973637-ae29-4a7c-9c91-9625764766d6" />
+
 
 ---
 
 ### Latihan 3: Mengubah Kelas dan Gaya CSS
 * **Penjelasan**: Mengubah tampilan visual elemen secara dinamis dengan memanipulasi daftar kelas CSS menggunakan `classList.toggle('highlight')` dan `classList.toggle('teks-besar')`.
 * **Cara Kerja**:
-  1. Tombol `tombolGaya` diberi *event listener* klik[cite: 46].
-  2. Saat tombol diklik, metode `classList.toggle()` memeriksa keberadaan kelas `.highlight` dan `.teks-besar` pada elemen `teksGaya`[cite: 46].
-  3. Jika kelas belum ada maka akan ditambahkan; jika kelas sudah ada maka akan dihapus[cite: 46].
+  1. Tombol `tombolGaya` diberi *event listener* klik.
+  2. Saat tombol diklik, metode `classList.toggle()` memeriksa keberadaan kelas `.highlight` dan `.teks-besar` pada elemen `teksGaya`.
+  3. Jika kelas belum ada maka akan ditambahkan; jika kelas sudah ada maka akan dihapus.
 * **Screenshot**:
-  *(Sisipkan screenshot perubahan gaya paragraf saat tombol diklik di sini)*
+<img width="419" height="117" alt="Screenshot from 2026-10-26 11-01-07" src="https://github.com/user-attachments/assets/10ff95f4-1f0c-4ae7-9080-424b3e4779ca" />
+<img width="419" height="117" alt="Screenshot from 2026-10-26 11-01-14" src="https://github.com/user-attachments/assets/0a0ba6d6-3ab1-4262-b68f-5f493101b768" />
+
 
 ---
 
 ### Latihan 4: Event Input dan Penghitung Karakter
-* **Penjelasan**: Menerapkan event `input` pada kolom masukan nama (`namaInput`) untuk menghitung jumlah karakter teks secara *real-time* menggunakan properti `value.length`[cite: 46].
+* **Penjelasan**: Menerapkan event `input` pada kolom masukan nama (`namaInput`) untuk menghitung jumlah karakter teks secara *real-time* menggunakan properti `value.length`.
 * **Cara Kerja**:
   1. Penangan event `input` mendengarkan setiap perubahan pada kolom teks `namaInput`.
-  2. Setiap kali pengguna mengetik, menghapus, atau menempelkan (*paste*) karakter, fungsi mengukur panjang string dengan `namaInput.value.length`[cite: 46].
+  2. Setiap kali pengguna mengetik, menghapus, atau menempelkan (*paste*) karakter, fungsi mengukur panjang string dengan `namaInput.value.length`.
   3. Angka jumlah karakter langsung diperbarui ke dalam elemen `span#jumlahKarakter`.
 * **Screenshot**:
-  *(Sisipkan screenshot indikator penghitung karakter saat mengetik di sini)*
+<img width="419" height="117" alt="Screenshot from 2026-10-26 11-03-04" src="https://github.com/user-attachments/assets/4189317a-a7ff-46ba-bcc9-a0538933d517" />
+<img width="419" height="117" alt="Screenshot from 2026-10-26 11-03-09" src="https://github.com/user-attachments/assets/169cc892-4a86-4a65-b256-4acced2047ee" />
+
 
 ---
 
 ### Latihan 5: Validasi Form Pendaftaran
-* **Penjelasan**: Menerapkan event `submit` pada formulir pendaftaran, menghentikan reload halaman bawaan dengan `event.preventDefault()`, serta memverifikasi masukan nama, regex email, dan rentang usia (17–100)[cite: 45, 46, 47].
+* **Penjelasan**: Menerapkan event `submit` pada formulir pendaftaran, menghentikan reload halaman bawaan dengan `event.preventDefault()`, serta memverifikasi masukan nama, regex email, dan rentang usia (17–100).
 * **Cara Kerja**:
-  1. Saat formulir di-submit, `event.preventDefault()` mencegah browser melakukan reload halaman[cite: 45, 46].
-  2. Program mengambil nilai dari kolom nama, email, dan usia, lalu menghapus spasi awal/akhir dengan `trim()`[cite: 46].
+  1. Saat formulir di-submit, `event.preventDefault()` mencegah browser melakukan reload halaman
+  2. Program mengambil nilai dari kolom nama, email, dan usia, lalu menghapus spasi awal/akhir dengan `trim()`.
   3. Program mencocokkan email dengan pola ekspresi reguler (`polaEmail`) dan memeriksa apakah usia merupakan bilangan bulat antara 17 hingga 100.
   4. Jika data tidak sesuai, pesan kesalahan ditampilkan. Jika valid, pesan sukses ditampilkan dan form di-reset (`form.reset()`).
 * **Screenshot**:
-  *(Sisipkan screenshot pengujian validasi form (kondisi error dan valid) di sini)*
 
 ---
 
