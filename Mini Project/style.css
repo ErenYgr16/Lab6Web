@@ -1,0 +1,11 @@
+.konten-tengah {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 15vh;
+}
+.container {
+    display: grid;
+    place-items: center;
+    height: 0vh;
+}

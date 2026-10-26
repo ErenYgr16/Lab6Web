@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="konten-tengah">
+        <h1 id="judul">Form Pendaftaran Workshop</h1>
+    </div>
+    <div class="container">
+        <form id="formPendaftaran" novalidate>
+        <p></p>
+            <label for="nama">Nama lengkap</label>
+            <input id="nama" name="nama" type="text">
+        <p></p>    
+            <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p> 
+        <p></p>   
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        <p></p>    
+            <label><input type="checkbox" name="sesi" value="Sesi1"> Sesi 1</label>
+            <label><input type="checkbox" name="sesi" value="Sesi2"> Sesi 2</label> 
+            <label><input type="checkbox" name="sesi" value="Sesi3"> Sesi 3</label>
+        <p></p>
+            <button type="submit">Daftar</button>
+            <input id="reset" type="reset" value="Reset">
+        </form>
+        <p id="pesanreset" aria-live="polite"></p>
+        <p id="pesanForm" aria-live="polite"></p>
+        
+    </div>
+</body>
+</html>
