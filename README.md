@@ -66,6 +66,10 @@ Praktikum ini bertujuan untuk memahami konsep **Document Object Model (DOM)** se
   3. Program mencocokkan email dengan pola ekspresi reguler (`polaEmail`) dan memeriksa apakah usia merupakan bilangan bulat antara 17 hingga 100.
   4. Jika data tidak sesuai, pesan kesalahan ditampilkan. Jika valid, pesan sukses ditampilkan dan form di-reset (`form.reset()`).
 * **Screenshot**:
+<img width="727" height="98" alt="Screenshot from 2026-10-26 11-07-52" src="https://github.com/user-attachments/assets/9fd6568d-9bea-49d1-9523-fdc7b4c5d026" />
+<img width="719" height="78" alt="Screenshot from 2026-10-26 11-08-53" src="https://github.com/user-attachments/assets/526a48a9-9ced-4bd8-852b-661566ed07e0" />
+<img width="719" height="78" alt="Screenshot from 2026-10-26 11-08-22" src="https://github.com/user-attachments/assets/941c14f4-5478-481b-aa40-432bdc7539e9" />
+<img width="719" height="78" alt="Screenshot from 2026-10-26 11-08-32" src="https://github.com/user-attachments/assets/a7f3e1fe-49db-4237-a34d-55f30f73e264" />
 
 ---
 
@@ -77,7 +81,8 @@ Praktikum ini bertujuan untuk memahami konsep **Document Object Model (DOM)** se
   3. Elemen dimasukkan ke dalam daftar `<ul>` menggunakan `appendChild()`.
   4. Menekan tombol "Tandai selesai" akan mengaktifkan kelas `.selesai` yang mencoret teks tugas melalui CSS `text-decoration: line-through`.
 * **Screenshot**:
-  *(Sisipkan screenshot aplikasi To-do List saat menambah dan menyelesaikan tugas di sini)*
+<img width="448" height="174" alt="Screenshot from 2026-10-26 11-14-34" src="https://github.com/user-attachments/assets/fc3a736a-d37d-40b0-a866-81766fe0e395" />
+<img width="458" height="253" alt="Screenshot from 2026-10-26 11-14-42" src="https://github.com/user-attachments/assets/d46ee587-eba1-4dc1-8337-dc5cd88c1a66" />
 
 ---
 
@@ -88,25 +93,31 @@ Praktikum ini bertujuan untuk memahami konsep **Document Object Model (DOM)** se
   2. Event `change` pada elemen dropdown sesi memicu tampilan ringkasan biaya/sesi yang dipilih secara otomatis.
   3. Event `submit` memverifikasi seluruh kelengkapan formulir sebelum menampilkan modal/pesan konfirmasi pendaftaran.
 * **Screenshot**:
-  *(Sisipkan screenshot tampilan antarmuka Mini Project Form Workshop di sini)*
+<img width="549" height="422" alt="Screenshot from 2026-10-26 14-06-35" src="https://github.com/user-attachments/assets/69d1de06-b577-4fab-b1ad-3a330c3918e6" />
+<img width="549" height="422" alt="Screenshot from 2026-10-26 14-06-46" src="https://github.com/user-attachments/assets/a42f68e8-b9c3-4b8c-a4ac-b99a5a703180" />
+<img width="549" height="422" alt="Screenshot from 2026-10-26 14-06-55" src="https://github.com/user-attachments/assets/7a8ba793-791a-43b1-a924-9db4ccb2f75f" />
+<img width="549" height="422" alt="Screenshot from 2026-10-26 14-07-05" src="https://github.com/user-attachments/assets/b8b34b2d-2e8a-4634-b30a-72dfe5e4c0b2" />
+<img width="549" height="422" alt="Screenshot from 2026-10-26 14-08-54" src="https://github.com/user-attachments/assets/03b8a511-cb60-46ab-8f06-888482a2bb0e" />
+<img width="549" height="422" alt="Screenshot from 2026-10-26 14-17-50" src="https://github.com/user-attachments/assets/700ebd37-a238-46e1-a9b6-086535e26da6" />
+
 
 ---
 
 ## Pertanyaan Evaluasi dan Jawaban (Bagian H)
 
 1. **Apa yang dimaksud dengan DOM dan apa manfaatnya?**
-   * **DOM (Document Object Model)** adalah antarmuka pemograman berstandar untuk dokumen HTML/XML yang merepresentasikan struktur dokumen dalam bentuk pohon objek (*node tree*)[cite: 44]. Manfaat utamanya adalah memungkinkan JavaScript untuk mengakses, menambah, menghapus, atau mengubah elemen, konten, atribut, dan gaya CSS secara dinamis saat halaman web dijalankan.
+   * **DOM (Document Object Model)** adalah antarmuka pemograman berstandar untuk dokumen HTML/XML yang merepresentasikan struktur dokumen dalam bentuk pohon objek (*node tree*). Manfaat utamanya adalah memungkinkan JavaScript untuk mengakses, menambah, menghapus, atau mengubah elemen, konten, atribut, dan gaya CSS secara dinamis saat halaman web dijalankan.
 
 2. **Apa perbedaan getElementById(), querySelector(), dan querySelectorAll()?**
-   * `getElementById('id')`: Memilih satu elemen tunggal secara spesifik berdasarkan nilai atribut ID-nya[cite: 44].
+   * `getElementById('id')`: Memilih satu elemen tunggal secara spesifik berdasarkan nilai atribut ID-nya.
    * `querySelector('selector_css')`: Memilih **elemen pertama** yang cocok dengan pola selector CSS (bisa berdasarkan tag, class, id, atau kombinasi).
    * `querySelectorAll('selector_css')`: Memilih **semua elemen** yang cocok dengan pola selector CSS dan mengembalikan hasilnya dalam bentuk *NodeList*.
 
 3. **Apa fungsi addEventListener() dan sebutkan tiga contoh event?**
-   * Fungsi `addEventListener()` digunakan untuk mendaftarkan fungsi penangan (*event listener/callback*) pada suatu elemen target, sehingga fungsi tersebut dieksekusi secara otomatis ketika event tertentu terjadi pada elemen tersebut[cite: 44].
+   * Fungsi `addEventListener()` digunakan untuk mendaftarkan fungsi penangan (*event listener/callback*) pada suatu elemen target, sehingga fungsi tersebut dieksekusi secara otomatis ketika event tertentu terjadi pada elemen tersebut.
    * **Contoh Event**:
      1. `'click'` : Terjadi saat pengguna mengklik elemen.
-     2. `'input'` : Terjadi saat nilai pada kolom input/textarea berubah atau diketik[cite: 44].
+     2. `'input'` : Terjadi saat nilai pada kolom input/textarea berubah atau diketik.
      3. `'submit'`: Terjadi saat formulir dikirimkan oleh pengguna.
 
 4. **Mengapa event.preventDefault() digunakan pada event submit form?**
